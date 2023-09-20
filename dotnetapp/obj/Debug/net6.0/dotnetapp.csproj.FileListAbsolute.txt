@@ -31,6 +31,3 @@
 /home/coder/project/workspace/dotnetapp/obj/Debug/net6.0/dotnetapp.MvcApplicationPartsAssemblyInfo.cache
 /home/coder/project/workspace/dotnetapp/obj/Debug/net6.0/dotnetapp.RazorAssemblyInfo.cache
 /home/coder/project/workspace/dotnetapp/obj/Debug/net6.0/dotnetapp.RazorAssemblyInfo.cs
-/home/coder/project/workspace/dotnetapp/obj/Debug/net6.0/dotnetapp.dll
-/home/coder/project/workspace/dotnetapp/obj/Debug/net6.0/refint/dotnetapp.dll
-/home/coder/project/workspace/dotnetapp/obj/Debug/net6.0/dotnetapp.pdb
