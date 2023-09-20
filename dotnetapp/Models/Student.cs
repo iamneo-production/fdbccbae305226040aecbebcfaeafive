@@ -1,4 +1,5 @@
-using System.Data.Component;
+using System.ComponentModel.DataAnnotations;
+using System;
 public class Student{
     public int StudentID {get;set;}
     [MaxLength(30)]
