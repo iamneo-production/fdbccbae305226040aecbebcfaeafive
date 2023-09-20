@@ -1,6 +1,6 @@
 namespace dotnetapp.Models{
     public class FrenchTuitionBookingException:Exception{
-        public KathakClassBookingException(string message):base(message)
+        public FrenchTuitionBookingException(string message):base(message)
         {}
     }
 }

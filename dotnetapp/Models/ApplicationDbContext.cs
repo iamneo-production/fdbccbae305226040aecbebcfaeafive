@@ -13,8 +13,8 @@ public class ApplicationDbContext : DbContext
         {
         }
 
-        public virtual DbSet<Batch> Class { get; set; }
-        public virtual DbSet<Student> Student { get; set; }
+        public virtual DbSet<Batch> Batches { get; set; }
+        public virtual DbSet<Student> Students { get; set; }
 
         // Write your ApplicationDbContext here...
     }
