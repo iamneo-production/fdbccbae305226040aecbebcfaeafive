@@ -1,8 +1,7 @@
 using dotnetapp.Models;
 using System;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+
+
 public class ApplicationDbContext : DbContext
     {
           public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
