@@ -7,5 +7,5 @@ public class Student {
     public string Name {get;set;}
     [MaxLength(50)]
     public string Email {get;set;}
-    public int BatchID {get;set;}
+    public Batch BatchID {get;set;}
 }}
