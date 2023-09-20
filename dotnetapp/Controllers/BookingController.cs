@@ -7,9 +7,19 @@ namespace dotnetapp.Controllers
         {
             return View();
         }
-        public IActionResult BatchEnrollmentForm(int id,string name,string email)
+        [HttpGet]
+        public IActionResult BatchEnrollmentForm()
         {
-            return View()
+            return View();
+        }
+        [HttpPost]
+         public IActionResult BatchEnrollmentForm(int id,string name,string email)
+        {
+            return View();
+        }
+        public IActionResult EnrollmentConfirmation(int studentid)
+        {
+            return View();
         }
     }
 }
