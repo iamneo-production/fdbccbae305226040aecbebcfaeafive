@@ -1,1 +1,31 @@
+@model IEnumerable<Batch>
 <h1>Available Batches</h1>
+<hr/>
+//startime endtime remaining
+<br /><br />
+<table>
+    <thead>
+        <tr>
+            <td>@Html.DisplayNameFor(d=>d.StartTime)</td>
+            <td>@Html.DisplayNameFor(d=>d.EndTime)</td>
+            <td>@Html.DisplayNameFor(d=>d.Capacity)</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var data in @Model)
+        {
+            <tr>
+                <td>@data.StartTime</td>
+                <td>@data.EndTime</td>
+                <td>@data.Capacity</td>
+                <td></td>
+                <td>
+                    
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
