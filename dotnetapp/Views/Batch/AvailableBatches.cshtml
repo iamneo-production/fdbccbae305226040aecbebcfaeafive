@@ -19,7 +19,10 @@
             <tr>
                 <td>@data.StartTime</td>
                 <td>@data.EndTime</td>
-                <td>@data.Capacity</td>
+                @{
+                    int x=5 - @data.Capacity;
+                }
+                <td>@x</td>
                 <td></td>
                 <td>
                     
