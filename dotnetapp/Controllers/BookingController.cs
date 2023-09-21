@@ -12,13 +12,14 @@ namespace dotnetapp.Controllers
         {ViewBag.a=id;
             return View();
         }
-        [HttpGet]
+         
         
-        [HttpPost]
+        /*[HttpPost]
          public IActionResult BatchEnrollmentForm(int id,string name,string email)
         {
             return View();
         }
+        */
         public IActionResult EnrollmentConfirmation(int studentid)
         {
             return View();
