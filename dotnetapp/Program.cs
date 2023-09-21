@@ -24,6 +24,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "proxy{controller=Batch}/{action=AvailableBatches}/{id?}");
+    pattern: "{controller=Batch}/{action=AvailableBatches}/{id?}");
 
 app.Run();

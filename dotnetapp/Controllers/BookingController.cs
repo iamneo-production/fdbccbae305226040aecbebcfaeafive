@@ -7,7 +7,7 @@ namespace dotnetapp.Controllers
          {
              _context = context;
           }
-   [HttpPost]
+    
         public IActionResult BatchEnrollmentForm(int id)
         {
             ViewBag.a=id;
