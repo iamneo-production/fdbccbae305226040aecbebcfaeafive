@@ -13,9 +13,9 @@ namespace dotnetapp.Controllers
         var data=_context.Batches.ToList();
         return View(data);
     }
-public IActionResult BookedBatches()
-{
-    return View();
-}
+       public IActionResult BookedBatches()
+        {
+            return View();
+        }
     }
 }
