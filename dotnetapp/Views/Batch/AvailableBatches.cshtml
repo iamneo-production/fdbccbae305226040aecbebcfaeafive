@@ -3,7 +3,7 @@
 <hr/>
 //startime endtime remaining
 <br /><br />
-<table border='1'>
+<table class='table'>
     <thead>
         <tr>
              <td>@Html.DisplayNameFor(d=>d.BatchID)</td>
@@ -30,12 +30,11 @@
                  <td> Batch is full</td>
                  }
              else
-             {<td>     
-                          
+             {<td>   
+
                     @Html.ActionLink("Book","BatchEnrollmentForm","Booking" ,new {id=data.BatchID}) </td>}
                 <td>
-                    
-                    
+                             
 
                 </td>
             </tr>
