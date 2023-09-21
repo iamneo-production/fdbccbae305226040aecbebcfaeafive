@@ -9,7 +9,7 @@ namespace dotnetapp.Controllers
           }
    
         public IActionResult BatchEnrollmentForm(int id)
-        {
+        {ViewBag.a=id;
             return View();
         }
         [HttpGet]
