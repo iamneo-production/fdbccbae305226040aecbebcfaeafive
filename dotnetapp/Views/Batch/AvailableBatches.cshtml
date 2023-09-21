@@ -32,6 +32,7 @@
              else
              {<td><a asp-controller="Booking" asp-action="BatchEnrollmentForm" asp-route-id=@data.BatchID>Book</a></td>}
                 
+                    @Html.ActionLink("Details","Display",new {id=data.Id}) 
                 <td>
                     
 
