@@ -24,6 +24,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Batch}/{AvailableBatches=Index}/{id?}");
+    pattern: "{controller=Home}/{AvailableBatches=Index}/{id?}");
 
 app.Run();
