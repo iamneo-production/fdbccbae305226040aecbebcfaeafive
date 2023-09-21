@@ -30,8 +30,7 @@
                  <td> Batch is full</td>
                  }
              else
-             {<td><a asp-controller="Booking" asp-action="BatchEnrollmentForm" asp-route-id=@data.BatchID>Books</a>
-                
+             {<td>               
                     @Html.ActionLink("Book","BatchEnrollmentForm","Booking" ,new {id=data.BatchID}) </td>}
                 <td>
                     
