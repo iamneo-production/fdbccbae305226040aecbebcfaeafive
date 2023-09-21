@@ -23,15 +23,11 @@
                     int x=5 - @data.Capacity;
                 }
                 <td>@x</td>
-                 @{ 
-                 if(x>=5) {
-                    <p>Hello</p>
-                 }                
-                        <p>Good</p>
-                
+                 @if(x>=5){
+                 <td>Hello</td>
                  }
-                 }
-             
+             else
+             {<td>Good</td>}
                 <td></td>
                 <td>
                     
