@@ -4,7 +4,7 @@ namespace dotnetapp.Controllers
     public class BatchController : Controller
     {
         private readonly ApplicationDbContext _context;
-          public BookingController(ApplicationDbContext context)
+          public BatchController(ApplicationDbContext context)
         {
             _context = context;
         }
