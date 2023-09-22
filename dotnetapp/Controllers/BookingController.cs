@@ -16,7 +16,7 @@ namespace dotnetapp.Controllers
             ViewBag.a=id;
             var data=(from b in _context.Batches where b.BatchID==id select b).FirstOrDefault();
             if(data.Capacity==5)
-            throw new FrenchTuitionBookingException("Maximum Number reached");
+            throw new FrenchTuitionBookingException("Maximum number reached");
             return View();
         }
          
