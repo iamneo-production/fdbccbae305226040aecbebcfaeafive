@@ -14,8 +14,8 @@ namespace dotnetapp.Controllers
         public IActionResult BatchEnrollmentForm(int id)
         {
             ViewBag.a=id;
-            TempData["id"]=id;
             var data=(from b in _context.Batches where b.BatchID==id select b).FirstOrDefault();
+            ViewBag.b=data.Capacity;
             if(data.Capacity==5)
             throw new FrenchTuitionBookingException("Maximum number reached");
             return View();
