@@ -1,6 +1,30 @@
+@model Booking
 <h1>Batch Enrollment Form</h1>
 <h2>@ViewBag.a</h2>
 <hr>
+
+
+<hr />
+@using(Html.BeginForm())
+{
+    <div>
+        
+        <div>
+            @Html.LabelFor(d=>d.Name)
+            @Html.EditorFor(d=>d.Name)
+            @Html.ValidationMessageFor(d=>d.Name,"",new {@style="color:red"})
+        </div>
+        <div>
+            @Html.LabelFor(d=>d.Emao)
+            @Html.EditorFor(d=>d.Location)
+            @Html.ValidationMessageFor(d=>d.Location,"",new {@style="color:red"})
+        </div>
+        <br><br>
+        <input type="submit" value="Save" />
+    </div>
+}
+<br /><br />
+@Html.ActionLink("Back To List","List")
 <br>
 <br>
 <br>
