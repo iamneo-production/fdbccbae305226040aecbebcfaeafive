@@ -12,6 +12,9 @@ namespace dotnetapp.Controllers
         public IActionResult BatchEnrollmentForm(int id)
         {
             ViewBag.a=id;
+            var data=from b in _context.Batches where b.BatchID==id select b;
+            if(data.Capacity==5)
+            throw Exception();
             return View();
         }
          
