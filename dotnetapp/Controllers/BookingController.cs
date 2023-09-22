@@ -18,11 +18,11 @@ namespace dotnetapp.Controllers
         
         [HttpPost]
         //
-         public IActionResult BatchEnrollmentForm(Student student)
+         public IActionResult BatchEnrollmentForm(int id,string name,string email)
         {
-            ViewBag.BatchID=student.studentid;
-            ViewBag.Name=student.name;
-            ViewBag.Email=student.email;
+            ViewBag.BatchID=id;
+            ViewBag.Name=name;
+            ViewBag.Email=email;
            // return View();
             return RedirectToAction("EnrollmentConfirmation");
         }
