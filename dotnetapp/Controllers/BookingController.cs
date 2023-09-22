@@ -18,7 +18,7 @@ namespace dotnetapp.Controllers
         [HttpPost]
          public IActionResult BatchEnrollmentForm(int id,string name,string email)
         {
-            return View();
+            return RedirectToAction("EnrollmentConfirmation");
         }
         
         public IActionResult EnrollmentConfirmation(int studentid)
