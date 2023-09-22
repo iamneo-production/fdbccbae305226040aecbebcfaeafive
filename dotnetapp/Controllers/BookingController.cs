@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using dotnetapp.Models;
 namespace dotnetapp.Controllers
 {
     public class BookingController : Controller
@@ -16,11 +17,12 @@ namespace dotnetapp.Controllers
          
         
         [HttpPost]
-         public IActionResult BatchEnrollmentForm(int id,string name,string email)
+        //
+         public IActionResult BatchEnrollmentForm(Student student)
         {
-            ViewBag.BatchID=id;
-            ViewBag.Name=name;
-            ViewBag.Email=email;
+            ViewBag.BatchID=student.studentid;
+            ViewBag.Name=student.name;
+            ViewBag.Email=student.email;
            // return View();
             return RedirectToAction("EnrollmentConfirmation");
         }
