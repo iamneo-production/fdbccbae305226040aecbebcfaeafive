@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using dotnetapp.Models;
+using System.Linq;
 namespace dotnetapp.Controllers
 {
     public class BookingController : Controller
@@ -12,7 +13,7 @@ namespace dotnetapp.Controllers
         public IActionResult BatchEnrollmentForm(int id)
         {
             ViewBag.a=id;
-            var data=from b in _context.Batches where b.BatchID==id select b;
+            var data=from b in _context.Batch where b.BatchID==id select b;
             if(data.Capacity==5)
             throw Exception();
             return View();
