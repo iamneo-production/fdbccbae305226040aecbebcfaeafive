@@ -14,6 +14,7 @@ namespace dotnetapp.Controllers
         public IActionResult BatchEnrollmentForm(int id)
         {
             ViewBag.a=id;
+            TempData["id]=id;
             var data=(from b in _context.Batches where b.BatchID==id select b).FirstOrDefault();
             if(data.Capacity==5)
             throw new FrenchTuitionBookingException("Maximum number reached");
@@ -28,6 +29,10 @@ namespace dotnetapp.Controllers
             ViewBag.BatchID=id;
             ViewBag.Name=name;
             ViewBag.Email=email;
+            var xid=TempData[id];
+            var data=(from b in _context.Batches where b.BatchID==xid select b).FirstOrDefault();
+            if(data.Capacity==5)
+            throw new FrenchTuitionBookingException("Maximum number reached");
            // return View();
             return RedirectToAction("EnrollmentConfirmation");
         }
