@@ -21,8 +21,8 @@ namespace dotnetapp.Controllers
             ViewBag.BatchID=id;
             ViewBag.Name=name;
             ViewBag.Email=email;
-            return View();
-            //return RedirectToAction("EnrollmentConfirmation");
+           // return View();
+            return RedirectToAction("EnrollmentConfirmation");
         }
         
         public IActionResult EnrollmentConfirmation(int studentid)
